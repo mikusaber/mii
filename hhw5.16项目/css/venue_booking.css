@@ -1,0 +1,182 @@
+.ven-wrap {
+    width: 950px;
+    height: 1000px;
+    padding-left:20px;
+}
+.ven-boo {
+    float: right;
+    width: 837px;
+    height: 42px;
+    padding-top: 12px;
+}   
+.btm-border {
+    float: left;
+    width: 950px;
+    height: 2px;
+    background: red;
+}
+.ven-boo ul li {
+    width: 70px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-top: 0px;
+    font-size: 12px;
+    line-height: 30px;
+    text-indent: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+.ven-boo ul {
+    position: absolute;
+    top: 27px;
+    left: 0;
+    z-index: 2;
+    float: left;
+    display: none;
+}
+.ven-sel {
+    position: relative;
+    float: left;
+    width: 72px;
+    height: 27px;
+    margin-right: 5px;
+}
+.ven-sel span {
+    float: left;
+    width: 70px;
+    height: 25px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    font-size: 12px;
+    text-indent: 5px;
+    cursor: pointer;
+    background: url("../images/sel_arrow.png") 55px 9px no-repeat;
+    cursor: pointer;
+}
+.calendar {
+    float: left;
+    width: 167px;
+    height: 27px;
+    margin-right: 5px;
+}
+.ven-boo form {
+    float: right;
+}
+.ven-boo form input {
+    width: 198px;
+    height: 25px; 
+    border: 1px solid #ccc;
+    font-size: 12px;
+    outline: none; 
+}
+.ven-boo form .query {
+    width: 58px;
+}
+.ven-boo form .export {
+    width: 65px;
+}
+.ven-boo form .export, .ven-boo form .query {
+    height: 26px;
+    font-size: 14px;
+    background: url(../images/btn_bj.png) repeat-x;
+    cursor: pointer;
+}
+.tit {
+    position: relative;
+    height: 54px;
+}
+.tit h2 {
+    position: absolute;
+    float: left;
+    height: 52px;
+    border-bottom: 2px solid #73BEE6;
+    font-size: 18px;
+    line-height: 52px;
+    z-index: 1;
+}
+.line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1000%;
+    height: 1px;
+    background: #CCC;
+    font-size: 0;
+}
+.right-con {
+    position: relative;
+    overflow: hidden;
+}
+.right-con table {
+    width: 950px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+.right-con table td, .right-con table th{
+    height: 29px;
+    padding: 0 1px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 12px;
+}
+.right-con table .table-ope {
+    width: 95px;
+}
+.right-con table .table-num {
+    width: 132px;
+}
+.right-con table .table-name {
+    width: 35px;
+}
+.right-con table .table-code {
+    width: 58px;
+}
+.right-con table th {
+    font-size: 14px;
+    background: url(../images/bac_th.png) repeat-x;
+}
+.right-con table em, .right-con table strong {
+    color: #4b94c7;
+}
+.right-con table em:hover {
+    text-decoration: underline;
+}
+.right-con table em {
+    cursor: pointer;
+}
+.hhw-change-page {
+    float: right;
+    width: 455px;
+    height: 72px;
+    margin-top: 13px;
+}
+.hhw-page-num span {
+    float: left;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 26px;
+    color: #4b94c7;
+    cursor: pointer;
+}
+.hhw-page-prev {
+    color: #bcbec4;
+}
+.hhw-page-num span:hover {
+    border: 1px solid #ccc;
+    background: #e5e6e8;
+}
+.hhw-page-num {
+    float: left;
+    margin-right: 13px;
+}
+.hhw-input-page {
+    width: 34px;
+    height: 14px;
+    font-size: 12px;
+}
+.hhw-sel-page {
+    float: left;
+    padding-top: 5px;
+}

@@ -1,0 +1,57 @@
+
+.tit {
+	position: relative;
+	height: 54px;
+}
+.tit h2 {
+	position: absolute;
+	float: left;
+	height: 52px;
+	border-bottom: 2px solid #73BEE6;
+	font-size: 18px;
+	line-height: 52px;
+	z-index: 1;
+}
+.line {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 1000%;
+	height: 1px;
+	background: #CCC;
+	font-size: 0;
+}
+.right-con {
+    position: relative;
+    overflow: hidden;	
+}
+.ven-wrap {
+    width: 950px;
+    height: 1000px;
+    padding-left:20px;
+}
+.hhw-order-page {
+	width: 850px;
+	height: 1000px;
+	margin-top: 20px;
+	padding: 24px 0 0 15px;
+	border: 1px solid #bcd8eb;
+	border-radius: 5px;
+	background: #f2f9fc;
+}
+.hhw-order-page ul {
+	overflow: hidden;
+	width: 670px;
+	height: 108px;
+}
+.hhw-order-page ul li {
+	float: left;
+	width: 335px;
+	height: 25px;
+	margin-bottom: 10px;
+}
+.hhw-order-line {
+	width: 800px;
+	height: 1px;
+	border-bottom: 1px dotted #a7a8a9;
+}

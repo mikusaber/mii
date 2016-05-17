@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>陈雄</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/venue_booking.css">
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<!--[if IE 6]>
+	<script src="js/DD_belatedPNG_0.0.8a.js"></script>
+	<script>
+		DD_belatedPNG.fix("*");
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrap">
+		<div class="con">
+			<div class="header clearfix">
+				<img src="images/logo_youkahui.png" alt="优卡会logo">
+				<span>运营后台</span>
+				<div class="right-info">
+					<strong>王小四</strong>
+					<a href="" title="">退出</a>
+				</div>
+			</div>
+			<div class="left">
+				<ul class="left-menu clearfix">
+					<li class="member">
+						<h3>会员管理</h3>
+						<ul class="show">
+							<li>美丽预约</li>
+							<li>场馆预约</li>
+							<li>手动下单</li>
+							<li>退款订单</li>
+						</ul>
+					</li>
+					<li class="shop-manager">
+						<h3>商品管理</h3>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="server-manager">
+						<h3>服务点管理</h3>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="order-manager">
+						<h3>订单管理</h3>
+						<ul class="show">
+							<li>订单列表</li>
+							<li>美丽预约</li>
+							<li>场馆预约</li>
+							<li>手动下单</li>
+							<li>退款订单</li>
+						</ul>
+					</li>
+					<li class="inform-manager">
+						<h3>信息管理</h3>
+						<ul>
+							<li>订单列表</li>
+							<li>美丽预约</li>
+							<li>场馆预约</li>
+							<li>手动下单</li>
+							<li>退款订单</li>
+						</ul>
+					</li>
+					<li class="beutity-manager">
+						<h3>美丽秘籍</h3>
+						<ul>
+							<li>订单列表</li>
+							<li>美丽预约</li>
+							<li>场馆预约</li>
+							<li>手动下单</li>
+							<li>退款订单</li>
+						</ul>
+					</li>
+					<li class="index-manager">
+						<h3>首页管理</h3>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="system-manager">
+						<h3>系统管理</h3>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="data-manager">
+						<h3>数据统计</h3>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="finance-manager">
+						<h3>财务管理</h3>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="menu-bottom"></div>
+			</div>
+			<div class="right clearfix">
+				<div class="right-header">
+					<div class="left-info">
+						<span>位置: </span>
+						<span>订单管理</span>
+						<span>></span>
+						<span>美丽预约</span>
+					</div>
+					<div class="right-info">
+						<em>总数:</em>
+						<em class="sum">1250</em>
+						<em>(共22页)</em>
+					</div>
+				</div>
+				<div class="right-con">
+					<div class="ven-wrap clearfix">
+						<div class="tit">
+							<h2>权限分配</h2>
+							<div class="ven-boo">
+			                <div class="ven-sel">
+			                    <span>预约来源</span>
+			                    <ul>
+			                        <li>PC端</li>
+			                        <li>客服预约</li>
+			                        <li>微信端</li>
+			                        <li>APP端</li>
+			                    </ul>
+			                </div>
+			                <div class="ven-sel">
+			                    <span>订单状态</span>
+			                    <ul>
+			                        <li>已取消</li>
+			                        <li>已确认</li>
+			                        <li>待确认</li>
+			                        <li>已消费</li>
+			                        <li>未支付</li>
+			                        <li>已退款</li>
+			                    </ul>
+			                </div>
+			                <div class="ven-sel">
+			                    <span>处理状态</span>
+			                    <ul>
+			                        <li>未处理</li>
+			                        <li>已处理</li>
+			                        <li>处理中</li>
+			                    </ul>
+			                </div>
+			                <div class="ven-sel">
+			                    <span>预约时间</span>
+			                    <ul>
+			                        <li>1</li>
+			                        <li>2</li>
+			                        <li>3</li>
+			                        <li>4</li>
+			                    </ul>
+			                </div>
+			                <div class="calendar"></div>
+			                <form action="">
+			                    <input type="text">
+			                    <input type="button" class="query" value="查询">
+			                    <input type="button" class="export" value="导出Excel">
+			                </form>
+			            </div>
+							<div class="line"></div>
+						</div>
+			            <table id="hhwTable">
+			            	<thead>
+			            		<tr>
+			            			<th>订单号</th>
+			            			<th>下单时间</th>
+			            			<th class="table-name">姓名</th>
+			            			<th>电话号码</th>
+			            			<th class="table-num">商品名称</th>
+			            			<th class="table-code">消费码</th>
+			            			<th>预约时间</th>
+			            			<th>数量</th>
+			            			<th>预约来源</th>
+			            			<th>订单状态</th>
+			            			<th>处理状态</th>
+			            			<th class="table-ope">操作</th>
+			            		</tr>
+			            	</thead>
+			            	<tbody>
+			            		<tr>
+			            			<td>25665544</td>
+			            			<td>2014-12-23 18:00:45</td>
+			            			<td>张三</td>
+			            			<td>32356654667</td>
+			            			<td>皇冠羽毛球馆</td>
+			            			<td>21548736</td>
+			            			<td>2014-10-02 18:00</td>
+			            			<td>2</td>
+			            			<td>PC端</td>
+			            			<td><span>已取消</span></td>
+			            			<td><strong>未处理</strong></td>
+			            			<td><em>查看</em></td>
+			            		</tr>
+			            		<tr>
+			            			<td>25665544</td>
+			            			<td>2014-12-23 18:00:45</td>
+			            			<td>张三</td>
+			            			<td>32356654667</td>
+			            			<td>皇冠羽毛球馆</td>
+			            			<td>21548736</td>
+			            			<td>2014-10-02 18:00</td>
+			            			<td>5</td>
+			            			<td>客服预约</td>
+			            			<td><span>已取消</span></td>
+			            			<td><strong>已处理</strong></td>
+			            			<td><em>查看</em></td>
+			            		</tr>
+			            		<tr>
+			            			<td>25665544</td>
+			            			<td>2014-12-23 18:00:45</td>
+			            			<td>张三</td>
+			            			<td>32356654667</td>
+			            			<td>皇冠羽毛球馆</td>
+			            			<td>21548736</td>
+			            			<td>2014-10-02 18:00</td>
+			            			<td>1</td>
+			            			<td>PC端</td>
+			            			<td><span>已确认</span></td>
+			            			<td><strong>已处理</strong></td>
+			            			<td><em>查看</em></td>
+			            		</tr>
+			            		<tr>
+			            			<td>25665544</td>
+			            			<td>2014-12-23 18:00:45</td>
+			            			<td>张三</td>
+			            			<td>32356654667</td>
+			            			<td>皇冠羽毛球馆</td>
+			            			<td>21548736</td>
+			            			<td>2014-10-02 18:00</td>
+			            			<td>2</td>
+			            			<td>微信端</td>
+			            			<td><span>待确认</span></td>
+			            			<td><strong>处理中</strong></td>
+			            			<td><em>查看</em></td>
+			            		</tr>
+			            		<tr>
+			            			<td>25665544</td>
+			            			<td>2014-12-23 18:00:45</td>
+			            			<td>张三</td>
+			            			<td>32356654667</td>
+			            			<td>皇冠羽毛球馆</td>
+			            			<td>21548736</td>
+			            			<td>2014-10-02 18:00</td>
+			            			<td>3</td>
+			            			<td>PC端</td>
+			            			<td><span>已消费</span></td>
+			            			<td><strong>已处理</strong></td>
+			            			<td><em>查看</em></td>
+			            		</tr>
+			            		<tr>
+			            			<td>25665544</td>
+			            			<td>2014-12-23 18:00:45</td>
+			            			<td>张三</td>
+			            			<td>32356654667</td>
+			            			<td>皇冠羽毛球馆</td>
+			            			<td>21548736</td>
+			            			<td>2014-10-02 18:00</td>
+			            			<td>1</td>
+			            			<td>APP端</td>
+			            			<td><span>已消费</span></td>
+			            			<td><strong>未处理</strong></td>
+			            			<td><em>查看</em></td>
+			            		</tr>
+			            		<tr>
+			            			<td>25665544</td>
+			            			<td>2014-12-23 18:00:45</td>
+			            			<td>张三</td>
+			            			<td>32356654667</td>
+			            			<td>皇冠羽毛球馆</td>
+			            			<td>21548736</td>
+			            			<td>2014-10-02 18:00</td>
+			            			<td>1</td>
+			            			<td>APP端</td>
+			            			<td><span>已消费</span></td>
+			            			<td><strong>未处理</strong></td>
+			            			<td><em>查看</em></td>
+			            		</tr>
+			            	</tbody>
+			            </table>
+			            <div class="hhw-change-page">
+			            	<div class="hhw-page-num clearfix">
+			            		<span class="hhw-page-prev">&lt;</span>
+			            		<span>1</span>
+			            		<span>2</span>
+			            		<span>3</span>
+			            		<span>4</span>
+			            		<span>5</span>
+			            		<span>6</span>
+			            		<span>…</span>
+			            		<span>10</span>
+			            		<span class="hhw-page-next">&gt;</span>
+			            	</div>
+			            	<div class="hhw-sel-page">
+			            		<span>共<em>10</em>页</span>
+				            	<span>到第</span>
+				            	<input type="text" class="hhw-input-page">
+				            	<span>页</span>
+				            	<input type="button" value="确定">
+			            	</div>			            	
+			            </div>
+			        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/venue_booking.js"></script>
+</body>
+</html>
